@@ -18,14 +18,14 @@ app.use(express.static(publicDirectoryPath))
 app.get("", (req, res) => {
     res.render("index", {
         title: "Weather",
-        name: "Obinna"
+        name: "Obinna Nwabia"
     });
 });
 
 app.get("/help", (req,res) => {
     res.render("help", {
         title: "help page",
-        name: "Emmanuel"
+        name: "Obinna Nwabia"
     });
 });
 
@@ -72,7 +72,7 @@ app.get("/help/*",(req, res) => {
 app.get("*", (req, res) => {
     res.render("404", {
         title: 404,
-        name: "Obinna",
+        name: "Obinna Nwabia",
         errorMessage: "PAGE NOT FOUND"
     });
 });
